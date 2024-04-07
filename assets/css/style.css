@@ -1,3 +1,67 @@
 body {
-    background: blue;
+    
 }
+
+/* Header - some code referenced from love running tutorial  */
+
+header {
+    background-color: #400808;
+    color: whitesmoke;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 1px 1px white;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  #menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
+    color: #fffae0;
+  }
+  
+  #menu > li {
+    margin-bottom: 1em;
+  }
+  
+  .active {
+    border-bottom: 1px solid white;
+  }
+  
+  /* Nav bar styles with drop down toggle - some code referenced from love running tutorial  */
+  
+  nav {
+    position: absolute;
+    background-color: #400808;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px black;
+    display: none;
+    top: 100%;
+  }
+  
+  /* Nav Toggle - some code referenced from love running tutorial  */
+  #nav-toggle:checked ~ nav {
+    display: block;
+  }
+  
+  #nav-toggle {
+    display: none;
+  }
+  
+  .nav-toggle-label {
+    font-size: 2rem;
+  }
+
+
+  
