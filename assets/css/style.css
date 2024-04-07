@@ -1,6 +1,24 @@
 body {
-    
+    background-color: red;
 }
+
+/* Asterisk wildcard selector to override default styles added by web browser */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /* General Style rules - some code referenced from love running tutorial  */
+  
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Raleway", sans-serif;
+  }
+  
 
 /* Header - some code referenced from love running tutorial  */
 
@@ -61,6 +79,32 @@ header {
   
   .nav-toggle-label {
     font-size: 2rem;
+  }
+
+  /* Main Content - some code referenced from love running tutorial  */
+
+main {
+    background-color: red;
+    /* Make main element take up any surplus space to push footer down */
+    flex: 1 0 auto;
+    margin-top: 47px;
+  }
+
+  /* Footer - some code referenced from love running tutorial  */
+
+#social-networks {
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+  }
+  
+  #social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: white;
   }
 
 
