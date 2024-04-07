@@ -90,6 +90,22 @@ main {
     margin-top: 47px;
   }
 
+    /* Game area - some code referenced from love Maths tutorial  */
+
+  .game-area{
+
+    background-color: #E6ECF0;
+    box-sizing: border-box;
+    width: 85%;
+    height: 65vh;
+    max-height: 450px;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+
+  }
+
   /* Footer - some code referenced from love running tutorial  */
 
 #social-networks {
