@@ -102,7 +102,7 @@ main {
     font-size: 25px;
     color: #001e4d;
     font-weight: 600;
-    border-bottom: 1px solid #333;
+    text-align: center;
 }
 .quiz{
     padding: 20px 0;
@@ -111,6 +111,7 @@ main {
     font-size: 19px;
     color: #001e4d;
     font-weight: 600;
+    text-align: center;
 }
 .btn{
     background: #fff;
@@ -134,6 +135,18 @@ main {
 .btn:disabled{
     cursor:no-drop;
 }
+
+#next-btn{
+  background: black;
+  color: goldenrod;
+  font-weight: 500;
+  width: 100%;
+  border: 1px solid #222;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: center;
+
+}
   /* Footer - some code referenced from love running tutorial  */
 
 #social-networks {
@@ -148,7 +161,7 @@ main {
   #social-networks i {
     font-size: 160%;
     padding: 5%;
-    color: white;
+    color: goldenrod;
   }
 
 
