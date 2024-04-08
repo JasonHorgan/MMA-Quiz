@@ -23,7 +23,7 @@ body {
 /* Header - some code referenced from love running tutorial  */
 
 header {
-    background-color: #400808;
+    background-color: black;
     color: whitesmoke;
     padding: 0 1rem;
     position: fixed;
@@ -90,35 +90,50 @@ main {
     margin-top: 47px;
   }
 
-    /* Game area - some code referenced from love Maths tutorial  */
+.app{
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+.app h1{
+    font-size: 25px;
+    color: #001e4d;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+}
+.quiz{
+    padding: 20px 0;
+}
+.quiz h2{
+    font-size: 19px;
+    color: #001e4d;
+    font-weight: 600;
+}
+.btn{
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
 
-  .game-area{
+.btn:hover:not([disabled]){
+    background: #222;
+    color: #fff;
 
-    background-color: #E6ECF0;
-    box-sizing: border-box;
-    width: 85%;
-    height: 65vh;
-    max-height: 450px;
-    max-width: 830px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1%;
-
-  }
-
-  .game-area > h1{
-    display: flex;
-    justify-content: center;
-  }
-
-  .score-area{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    margin-top: 450px;
-    background-color: #E6ECF0;
-  }
-
+}
+.btn:disabled{
+    cursor:no-drop;
+}
   /* Footer - some code referenced from love running tutorial  */
 
 #social-networks {
