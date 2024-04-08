@@ -90,6 +90,10 @@ main {
     margin-top: 47px;
   }
 
+  #logo{
+    width:350px; 
+  }
+
 .app{
     background: #fff;
     width: 90%;

@@ -2,77 +2,93 @@ console.log("Hello, world!");
 
 /** QUESTIONS */
 
-let questions = [
-    { 
+const questions = [
+    {
         question: "What year was the UFC founded?",
-        optionA: "1990",
-        optionB: "1993",
-        optionC: "1997",
-        optionD: "2001",
-        correct: "B"
-    },     { 
+        answers: [
+            { text: "1993", correct: true},
+            { text: "1990", correct: false},
+            { text: "1997", correct: false},
+            { text: "2001", correct: false},
+        ]
+    }, 
+    {
         question: "Where was the first UFC event held?",
-        optionA: "Denver, Colorado",
-        optionB: "Las Vegas, Nevada",
-        optionC: "Miami, Florida",
-        optionD: "Toronto, Ontario",
-        correct: "A"
-    },     { 
-        question: "Who was the first eve UFC champion?",
-        optionA: "Royce Gracie",
-        optionB: "Mark Coleman",
-        optionC: "Anderson Silva",
-        optionD: "Ken Shamrock",
-        correct: "A"
-    },     { 
+        answers: [
+            { text: "Denver, Colorado", correct: true},
+            { text: "Las Vegas, Nevada", correct: false},
+            { text: "Miami, Florida", correct: false},
+            { text: "Toronto, Ontario", correct: false},
+        ]
+    },
+    {
+        question: "Who was the first ever UFC champion?",
+        answers: [
+            { text: "Royce Gracie", correct: true},
+            { text: "Mark Coleman", correct: false},
+            { text: "Anderson Silva", correct: false},
+            { text: "Frank Shamerock", correct: false},
+        ]
+    },
+    {
         question: "Which fighter has the most successful UFC title defences?",
-        optionA: "Conor McGregor",
-        optionB: "Georges St Pierre",
-        optionC: "Anderson Silva",
-        optionD: "Israel Adesanya",
-        correct: "C"
-    },     { 
-        question: "Who was the first female fighter to be induced into the UFC hall of fame?",
-        optionA: "Holly Holm",
-        optionB: "Amanda Nunes",
-        optionC: "Joanna Jedrzejczyk",
-        optionD: "Ronda Rousey",
-        correct: "D"
-    },     { 
+        answers: [
+            { text: "Anderson Silva", correct: true},
+            { text: "Conor McGregor", correct: false},
+            { text: "GSP", correct: false},
+            { text: "Izzy", correct: false},
+        ]
+    },
+    {
+        question: "Who was the first female fighter to be induced into the UFC hall of fame",
+        answers: [
+            { text: "Ronda Rousey", correct: true},
+            { text: "Holly Holm", correct: false},
+            { text: "Amanda Nunes", correct: false},
+            { text: "Joanna J", correct: false},
+        ]
+    },
+     { 
         question: "Who holds the record for fastest knockout in UFC history?",
-        optionA: "Jorge Masvidal",
-        optionB: "Duane Ludwig",
-        optionC: "Todd Duffee",
-        optionD: "Chan Sung Jung",
-        correct: "A"
+        answers: [
+        {text: "Jorge Masvidal", correct: true},
+        {text: "Duane Ludwig", correct: false},
+        {text: "Chan Sung Jung", correct: false},
+        {text: "Brian Ortega", correct: false},
+        ]
     },     { 
         question: "What year was the first womens fight in the UFC?",
-        optionA: "1993",
-        optionB: "2003",
-        optionC: "2013",
-        optionD: "2009",
-        correct: "C"
+        answers: [
+        {text: "1993", correct: false},
+        {text: "2003", correct: false},
+        {text: "2013", correct: true},
+        {text: "2009", correct: false},
+        ]
     },     { 
         question: "Who was the first fighter to win UFC titles in 2 different weight classes?",
-        optionA: "Conor McGregor",
-        optionB: "Randy Couture",
-        optionC: "Daniel Cormier",
-        optionD: "Amanda Nunes",
-        correct: "A"
+        answers:[
+        {text: "Conor McGregor", correct: false},
+        {text: "Randy Couture", correct: true},
+        {text: "Daniel Cormier", correct: false},
+        {text: "Amanda Nunes", correct: false},
+        ]
     },     { 
         question: "Who was the first UFC women's strawweight chamption?",
-        optionA: "Ronda Rousey",
-        optionB: "Carla Esparza",
-        optionC: "Rose Namajunas",
-        optionD: "Joanna Jedrzejczyk",
-        correct: "B"
+        answers:[
+        {text: "Ronda Rousey", correct: false},
+        {text: "Carla Esparza", correct: true},
+        {text: "Rose Namajunas", correct: false},
+        {text: "Joanna Jedrzejczyk", correct: false},
+        ]
     },     { 
         question: "Who has the most finishes in UFC history?",
-        optionA: "Anderson Silva",
-        optionB: "Jose Aldo",
-        optionC: "Donald Cerrone",
-        optionD: "Fancis Ngannou",
-        correct: "C"
+        answers:[
+        {text: "Anderson Silva", correct: false},
+        {text: "Jose Aldo", correct: false},
+        {text: "Donald Cerrone", correct: true},
+        {text: "Francis Ngannou", correct: false},
+        ]
+        
     }, 
 ];
 
