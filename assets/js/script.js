@@ -1,13 +1,5 @@
 console.log("Hello, world!");
 
-const question = document.getElementById("question_text");
-const optionA = document.getElementById("optionA");
-const optionB = document.getElementById("optionB");
-const optionC = document.getElementById("optionC");
-const optionD = document.getElementById("optionD");
-
-
-
 /** QUESTIONS */
 
 let questions = [
@@ -85,20 +77,3 @@ let questions = [
 ];
 
 
-/**Variables for questions and score*/
-
-let lastQuestion = questions.length - 1;
-let runningQuestion = 0;
-
-/**Function to render questions*/
-function renderQuestion() {
-
-    let q = questions[runningQuestion];
-
-    optionA.innerHTML = q.optionA;
-    optionB.innerHTML = q.optionB;
-    optionC.innerHTML = q.optionC;
-    optionD.innerHTML = q.optionD;
-} 
-
-renderQuestion();
