@@ -111,6 +111,14 @@ main {
     justify-content: center;
   }
 
+  .score-area{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 450px;
+    background-color: #E6ECF0;
+  }
+
   /* Footer - some code referenced from love running tutorial  */
 
 #social-networks {
