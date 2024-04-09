@@ -93,10 +93,24 @@ const questions = [
 ];
 
 const questionElement = document.getElementById("question");
-const answerButtons = document.getElementById("answer-buttons");
+const answerButtons = document.querySelectorAll(".answer-btn");
 const nextButton = document.getElementById("next-btn");
 
 let currentQuestionIndex = 0;
 let score = 0;
+
+questionElement.innerText = questions[3].question;
+let count=0;
+answerButtons.forEach((answerbtn)=>{
+    answerbtn.innerText = questions[3].answers[count].text;
+    count++
+    console.log("Who has the most finishes in UFC history?")
+})
+
+answerButtons.forEach((answer)=>{
+    answer.addEventListener("click", ()=>{
+        console.log(answer.innerText);
+    });
+});
 
 
