@@ -1,39 +1,49 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Project Portfolio 2 - UFC Quiz
 
-Welcome,
+This UFC Quiz is a multiple choice quiz for MMA fans to test their UFC knowledge  
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+INSERT AMIRESPONSIVE PHOTOS HERE 
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+[You can view my website here](https://jasonhorgan.github.io/MMA-Quiz/)
 
-## Codeanywhere Reminders
+# User Experience (UX)
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+### Initial Discussion
 
-`python3 -m http.server`
+This page is a UFC quiz for MMA fans to test their knowledge and try to beat their previous high score. 
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+#### Key information for the site
 
-`http_server`
+- UFC knowledge quiz
+- How to play ???
+- Username ???
+- Color scheme that UFC fans will be immediately familliar with 
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+### User Stories
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+#### Client Goals
 
-To log into the Heroku toolbelt CLI:
+- To make it easy for users to know how to play the quiz
+- To create an inviting quiz that people want to try over again until they get 10/10 score
+- Make it fun so people want to share it with their friends so they can compare scores with each other 
+- 
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+#### First Time Visitor Goals
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- Have fun playing a quiz testing their UFC knowledge 
+- 
 
----
 
-Happy coding!
+#### Returning Visitor Goals
+
+- I want to beat my previous high score
+
+
+#### Frequent Visitor Goals
+
+- ???
+
+
+## Design
