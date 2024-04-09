@@ -113,4 +113,26 @@ answerButtons.forEach((answer)=>{
     });
 });
 
+function displayQuestion(){
 
+};
+
+function nextQuestion(){
+
+};
+
+function startGame(){
+
+};
+
+function checkAnswer(){
+
+};
+
+function incrementScore(){
+
+};
+
+function incrementWrongAnswer(){
+
+};
