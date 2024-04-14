@@ -95,6 +95,7 @@ const questions = [
 const questionElement = document.getElementById("question");
 const answerButtons = document.querySelectorAll(".answer-btn");
 const nextButton = document.getElementById("next-btn");
+let randomQuestion = questions[Math.floor(Math.random())];
 
 let currentQuestionIndex = 0;
 let score = 0;
@@ -104,7 +105,7 @@ let count=0;
 answerButtons.forEach((answerbtn)=>{
     answerbtn.innerText = questions[3].answers[count].text;
     count++
-    console.log("Who has the most finishes in UFC history?")
+    console.log("Who has the most finishes in UFC history?") 
 })
 
 answerButtons.forEach((answer)=>{
@@ -113,26 +114,30 @@ answerButtons.forEach((answer)=>{
     });
 });
 
-function displayQuestion(){
 
-};
+function startQuiz (){
+    currentQuestionIndex = 0;
+    score = 0;
+    nextButton.innerHTML = "Next Question"
+    showQuestion();
+}
 
-function nextQuestion(){
+function showQuestion (){
+    resetState();
+    let currentQuestion = questions[currentQuestionIndex];
+    let questionNo = currentQuestionIndex + 1;
+    questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
 
-};
+    currentQuestion.answers.forEach(answer => {
+        const button = document.createElement("button");
+        button.innerHTML = answer.text;
+        button.classList.add("btn");
+        answerButtons.appendChild(button);
+        if(answer.correct){
+            button.dataset.correct = answer.correct;
+        }
+        button.addEventListener("click", selectAnswer);
+    });
+}
 
-function startGame(){
-
-};
-
-function checkAnswer(){
-
-};
-
-function incrementScore(){
-
-};
-
-function incrementWrongAnswer(){
-
-};
+startQuiz
