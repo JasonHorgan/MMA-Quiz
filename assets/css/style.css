@@ -117,7 +117,7 @@ main {
     font-weight: 600;
     text-align: center;
 }
-.answer-btn{
+.btn{
     background: #fff;
     color: #222;
     font-weight: 500;
@@ -151,6 +151,14 @@ main {
   text-align: center;
 
 }
+
+.correct{
+  background: goldenrod;
+}
+.incorrect{
+  background: red;
+}
+
   /* Footer - some code referenced from love running tutorial  */
 
 #social-networks {
