@@ -94,6 +94,11 @@ main {
     width:350px; 
   }
 
+  .ufc_image{
+    display: flex;
+    justify-content: center;
+  }
+
 .app{
     background: #fff;
     width: 90%;
