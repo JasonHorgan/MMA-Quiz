@@ -173,21 +173,22 @@ function resetState() {
   }
 }
 
-function showScore() {
+/*function showScore() {
   resetState();
   questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
   nextButton.innerHTML = "Play Again";
   nextButton.style.display = "block";
-}
+}*/
 
 function showScore() {
     resetState();
     if (score <= 3){
-    questionElement.innerHTML = `You scored ${score} out of ${questions.length}! You're a casual!`;}
+    questionElement.innerHTML = `You scored ${score} out of ${questions.length}! You're a casual!`;
+    }
     else if (score >3 && score <7){
         questionElement.innerHTML = `You scored ${score} out of ${questions.length}! You're a contender`; 
     }
-    else if(score > 7);{
+    else if(score > 7){
         questionElement.innerHTML = `You scored ${score} out of ${questions.length}! That's a championship level score!`;
     }
     nextButton.innerHTML = "Play Again";
