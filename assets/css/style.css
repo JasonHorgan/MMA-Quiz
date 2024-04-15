@@ -168,6 +168,12 @@ main {
   padding: 30px;
 }
 
+h3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
   /* Footer - some code referenced from love running tutorial  */
 
 #social-networks {
