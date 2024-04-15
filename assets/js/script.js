@@ -155,6 +155,7 @@ function selectAnswer(e) {
     scoreDisplay.innerHTML = `${score} /10`;
   } else {
     selectedBtn.classList.add("incorrect");
+    //alert("WRONG");
   }
   Array.from(answerButtons.children).forEach((button) => {
     if (button.dataset.correct === "true") {
@@ -178,6 +179,20 @@ function showScore() {
   nextButton.innerHTML = "Play Again";
   nextButton.style.display = "block";
 }
+
+function showScore() {
+    resetState();
+    if (score <= 3){
+    questionElement.innerHTML = `You scored ${score} out of ${questions.length}! You're a casual!`;}
+    else if (score >3 && score <7){
+        questionElement.innerHTML = `You scored ${score} out of ${questions.length}! You're a contender`; 
+    }
+    else if(score > 7);{
+        questionElement.innerHTML = `You scored ${score} out of ${questions.length}! That's a championship level score!`;
+    }
+    nextButton.innerHTML = "Play Again";
+    nextButton.style.display = "block";
+  }
 
 function handleNextButton() {
   currentQuestionIndex++;
