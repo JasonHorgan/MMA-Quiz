@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" 
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+    name="description"
+    content="UFC quiz game. A fun interactive UFC quiz game."
+  />
+  <meta
+    name="keywords"
+    content="UFC, MMA, Conor McGregor, Alex Pereira, Dana White, Mixed Martial Arts."
+  />
+    <link rel="stylesheet" href="assets/css/style.css" 
+    />
+
+    <title>UFC Quiz</title>
+
+    <!-- Favicon - some code referenced from love running tutorial  -->
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon_boxing/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon_boxing/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon_boxing/favicon-16x16.png"
+    />
+
+  </head>
+
+  <body>
+
+    <!-- Header - some code referenced from my first project -->
+
+    <header>
+        <a href="index.html">
+          <h1 id="logo"> UFC Quiz </h1>
+        </a>
+
+        <input type="checkbox" id="nav-toggle" name="nav-toggle" />
+        <label for="nav-toggle" class="nav-toggle-label"
+          ><i class="fa-solid fa-bars"></i
+        ></label>
+        <nav>
+          <ul id="menu">
+            <li><a href="" class="active">Home</a></li>
+          </ul>
+        </nav>
+      </header>
+
+<!-- Code for Main Game area - referenced from love maths-->
+
+      <main>
+       
+        <body>
+            <div id = "how">
+                <h1> HOW TO PLAY </h1>
+                <p>1: Read the question and select your answer.
+                    <br>
+                    2: If the answer you chose changes color to gold, this means you are correct. If the answer changes color to red, this means you selected the wrong answer.
+                    <br>
+                    3: Continue to the end of the quiz to see your final score.
+                </p>
+            </div>
+      </main>
+       <!-- Footer - some code referenced from love running tutorial -->
+
+    <footer>
+        <ul id="social-networks">
+          <li>
+            <a
+              href="https://facebook.com/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Visit our Facebook page (opens in a new tab)"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </li>
+  
+          <li>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Visit our Instagram page (opens in a new tab)"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+  
+          <li>
+            <a
+              href="https://twitter.com/?lang=en"
+              target="_blank"
+              rel="noopener"
+              aria-label="Visit our X page (opens in a new tab)"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+          </li>
+  
+          <li>
+            <a
+              href="https://www.youtube.com/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Visit our YouTube Channel (opens in a new tab)"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </li>
+        </ul>
+      </footer>
+
+    <!--Font Awesome Kit-->
+    <script
+    src="https://kit.fontawesome.com/f00d27df2c.js"
+    crossorigin="anonymous"
+  >
+</script>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
