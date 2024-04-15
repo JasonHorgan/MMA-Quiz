@@ -44,7 +44,7 @@ header {
     font-size: 110%;
     letter-spacing: 4px;
     list-style-type: none;
-    color: white;
+    color: goldenrod;
   }
   
   #menu > li {
@@ -59,11 +59,11 @@ header {
   
   nav {
     position: absolute;
-    background-color: #400808;
+    background-color: black;
     width: 100%;
     left: 0;
     padding: 0 1rem;
-    box-shadow: 0 2px 2px black;
+    box-shadow: 0 2px 2px goldenrod;
     display: none;
     top: 100%;
   }
