@@ -100,7 +100,7 @@ main {
   }
 
 .app{
-    background: #fff;
+    background: white;
     width: 90%;
     max-width: 600px;
     margin: 50px auto 30px;
@@ -109,16 +109,21 @@ main {
 }
 .app h1{
     font-size: 25px;
-    color: #001e4d;
+    color: black;
     font-weight: 600;
     text-align: center;
 }
+
+.belt{
+  display: none;
+}
+
 .quiz{
     padding: 20px 0;
 }
 .quiz h2{
     font-size: 19px;
-    color: #001e4d;
+    color: black;
     font-weight: 600;
     text-align: center;
 }
@@ -150,7 +155,7 @@ main {
   color: goldenrod;
   font-weight: 500;
   width: 100%;
-  border: 1px solid #222;
+  border: 0.5px solid goldenrod;
   padding: 10px;
   margin: 10px 0;
   text-align: center;
@@ -165,7 +170,7 @@ main {
 }
 
 #how{
-  background: #fff;
+  background: white;
   width: 90%;
   max-width: 600px;
   margin: 100px auto 0;
@@ -196,5 +201,40 @@ h3{
     color: goldenrod;
   }
 
+  /* Media query tablets and larger (768px and up) - some code referenced from love running tutorial  */
 
-  
+@media screen and (min-width: 768px) {
+
+  #ufc_logo{
+    width:400px; 
+  }
+
+
+}
+
+/* Large devices (laptops and desktops 992px and up) - some code referenced from love running tutorial  */
+
+@media screen and (min-width: 992px){
+
+  .app{
+
+    height: 800px;
+}
+
+.quiz{
+  padding-top: 425px;
+  align-content: center;
+}
+
+#ufc_logo{
+  width:600px;
+}
+
+.belt{
+  display: flex;
+  width: 450px;
+  height: 450px;
+}
+
+  }
+
