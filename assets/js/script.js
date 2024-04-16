@@ -78,7 +78,7 @@ const questions = [
     ],
   },
   {
-    question: "Who was the first UFC women's strawweight chamption?",
+    question: "Who was the first UFC women's strawweight champion?",
     answers: [
       { text: "Ronda Rousey", correct: false },
       { text: "Carla Esparza", correct: true },
@@ -232,7 +232,7 @@ function showQuestion() {
   resetState();
   let currentQuestion = questions[currentQuestionIndex];
   let questionNo = currentQuestionIndex + 1;
-  questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
+  questionElement.innerHTML = currentQuestion.question;
 
   currentQuestion.answers.forEach((answer) => {
     const button = document.createElement("button");
@@ -283,13 +283,13 @@ function resetState() {
 function showScore() {
     resetState();
     if (score <= 3){
-    questionElement.innerHTML = `You scored ${score} out of ${questions.length}! You're a casual!`;
+    questionElement.innerHTML = `You scored ${score} out of 10! You're a casual!`;
     }
     else if (score >3 && score <7){
-        questionElement.innerHTML = `You scored ${score} out of ${questions.length}! You're a contender`; 
+        questionElement.innerHTML = `You scored ${score} out of 10! You're a contender`; 
     }
     else if(score > 7){
-        questionElement.innerHTML = `You scored ${score} out of ${questions.length}! That's a championship level score!`;
+        questionElement.innerHTML = `You scored ${score} out of 10! That's a championship level score!`;
     }
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block";
@@ -297,7 +297,7 @@ function showScore() {
 
 function handleNextButton() {
   currentQuestionIndex++;
-  if (currentQuestionIndex < questions.length) {
+  if (currentQuestionIndex < 10) {
     showQuestion();
   } else {
     showScore();
