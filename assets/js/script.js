@@ -122,6 +122,7 @@ answerButtons.forEach((answer)=>{
 });*/
 
 function startQuiz() {
+  randomize(questions);
   currentQuestionIndex = 0;
   score = 0;
   nextButton.innerHTML = "Next Question";
@@ -215,3 +216,43 @@ nextButton.addEventListener("click", () => {
 });
 
 startQuiz();
+
+// JavaScript Program to shuffle a given array 
+ 
+// A function to print an array 
+function printArray (questions)
+{ 
+    let ans = '';
+    for (let i = 0; i < questions.length; i++)
+    {
+        ans += questions[i] + " "; 
+    }
+    console.log(ans); 
+} 
+ 
+// A function to generate a random 
+// permutation of arr
+function randomize (questions) 
+{
+ 
+    // Start from the last element and swap 
+    // one by one. We don't need to run for 
+    // the first element that's why i > 0 
+    for (let i = questions.length - 1; i > 0; i--)
+    {
+     
+        // Pick a random index from 0 to i inclusive
+        let j = Math.floor(Math.random() * (i + 1)); 
+ 
+        // Swap arr[i] with the element 
+        // at random index 
+        [questions[i], questions[j]] = [questions[j], questions[i]];
+    } 
+} 
+ 
+// Driver Code
+let arr = [1, 2, 3, 4, 5, 6, 7, 8]; 
+randomize (arr); 
+printArray(arr); 
+
+console.log(printArray);
