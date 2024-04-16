@@ -184,6 +184,27 @@ h3{
   justify-content: center;
 }
 
+.rules {
+  padding: 10px 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.rules button {
+  font-weight: 500;
+  width: 100%;
+  border: 0.5px solid goldenrod;
+  padding: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  align-items: center;
+  font-size: 10px;
+  border-radius: 5px;
+  background-color: goldenrod;
+  border-color: black;
+  
+}
+
   /* Footer - some code referenced from love running tutorial  */
 
 #social-networks {
@@ -209,6 +230,11 @@ h3{
     width:400px; 
   }
 
+  
+  .rules button {
+    width: 300px;
+    
+  }
 
 }
 
