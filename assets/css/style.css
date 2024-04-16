@@ -108,20 +108,18 @@ main {
     padding: 30px;
 }
 .app h1{
+  font-family: "poppins";
     font-size: 25px;
     color: black;
     font-weight: 600;
     text-align: center;
 }
 
-.belt{
-  display: none;
-}
-
 .quiz{
     padding: 20px 0;
 }
 .quiz h2{
+  font-family: "encode sans";
     font-size: 19px;
     color: black;
     font-weight: 600;
@@ -130,6 +128,7 @@ main {
 .btn{
     background: #fff;
     color: #222;
+    font-family: "poppins";
     font-weight: 500;
     width: 100%;
     border: 1px solid goldenrod;
