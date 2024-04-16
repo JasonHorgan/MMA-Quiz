@@ -203,11 +203,11 @@ const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
 let randomQuestion = questions[Math.floor(Math.random())];
 let scoreDisplay = document.getElementById("score_display");
-
 let currentQuestionIndex = 0;
 let score = 0;
 
 // Function to start quiz. Some code adapted from tutorial mentioned in readme
+
 function startQuiz() {
   randomize(questions);
   currentQuestionIndex = 0;
@@ -217,6 +217,7 @@ function startQuiz() {
   showQuestion();
 }
 // Function to map question data to question div. Some code adapted from tutorial mentioned in readme
+
 function showQuestion() {
   resetState();
   let currentQuestion = questions[currentQuestionIndex];
@@ -234,7 +235,7 @@ function showQuestion() {
     button.addEventListener("click", selectAnswer);
   });
 }
-//// Function to select answer and mark data as correct or incorrect. Some code adapted from tutorial mentioned in readme
+// Function to select answer and mark data as correct or incorrect. Some code adapted from tutorial mentioned in readme
 
 function selectAnswer(e) {
   const selectedBtn = e.target;
@@ -264,6 +265,7 @@ function resetState() {
 }
 
 //functions to show score once 10 questions have been answered and show a different message depending on the score. 
+
 function showScore() {
     resetState();
     if (score <= 3){
@@ -303,6 +305,7 @@ startQuiz();
 // JavaScript Program to shuffle the questions in question array , referenced in readme
  
 // A function to print an array 
+
 function printArray (questions)
 { 
     let ans = '';
@@ -315,20 +318,24 @@ function printArray (questions)
  
 // A function to generate a random 
 // permutation of arr
+
 function randomize (questions) 
 {
  
     // Start from the last element and swap 
     // one by one. We don't need to run for 
     // the first element that's why i > 0 
+
     for (let i = questions.length - 1; i > 0; i--)
     {
      
         // Pick a random index from 0 to i inclusive
+
         let j = Math.floor(Math.random() * (i + 1)); 
  
         // Swap arr[i] with the element 
         // at random index 
+        
         [questions[i], questions[j]] = [questions[j], questions[i]];
     } 
 } 
