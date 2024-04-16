@@ -302,21 +302,6 @@ startQuiz();
 
 // JavaScript Program to shuffle the questions in question array , referenced in readme
  
-// A function to print an array 
-
-function printArray (questions)
-{ 
-    let ans = '';
-    for (let i = 0; i < questions.length; i++)
-    {
-        ans += questions[i] + " "; 
-    }
-    console.log(ans); 
-} 
- 
-// A function to generate a random 
-// permutation of arr
-
 function randomize (questions) 
 {
  
