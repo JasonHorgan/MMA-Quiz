@@ -252,7 +252,7 @@ function selectAnswer(e) {
   if (isCorrect) {
     selectedBtn.classList.add("correct");
     score++;
-    scoreDisplay.innerHTML = `${score} /10`;
+    scoreDisplay.innerHTML = `${score}`;
   } else {
     selectedBtn.classList.add("incorrect");
     //alert("WRONG");
