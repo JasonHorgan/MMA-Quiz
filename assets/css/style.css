@@ -242,22 +242,21 @@ h3{
 
   .app{
 
-    height: 800px;
+    height: 600px;
 }
 
 .quiz{
-  padding-top: 425px;
+  padding-top: 100px;
   align-content: center;
+}
+
+.quiz > h2{
+  font-size: 30px;
+  padding-bottom: 10px;
 }
 
 #ufc_logo{
   width:600px;
-}
-
-.belt{
-  display: flex;
-  width: 450px;
-  height: 450px;
 }
 
   }
