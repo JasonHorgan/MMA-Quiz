@@ -1,6 +1,6 @@
-console.log("Hello, world!");
 
-/** QUESTIONS */
+
+/** QUESTIONS AND ANSWERS DATA*/
 
 const questions = [
   {
@@ -196,6 +196,8 @@ const questions = [
   },
 ];
 
+// Variable data
+
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
@@ -205,7 +207,7 @@ let scoreDisplay = document.getElementById("score_display");
 let currentQuestionIndex = 0;
 let score = 0;
 
-
+// Function to start quiz. Some code adapted from tutorial mentioned in readme
 function startQuiz() {
   randomize(questions);
   currentQuestionIndex = 0;
@@ -214,7 +216,7 @@ function startQuiz() {
   scoreDisplay.innerHTML = `${score}`;
   showQuestion();
 }
-
+// Function to map question data to question div. Some code adapted from tutorial mentioned in readme
 function showQuestion() {
   resetState();
   let currentQuestion = questions[currentQuestionIndex];
@@ -232,6 +234,7 @@ function showQuestion() {
     button.addEventListener("click", selectAnswer);
   });
 }
+//// Function to select answer and mark data as correct or incorrect. Some code adapted from tutorial mentioned in readme
 
 function selectAnswer(e) {
   const selectedBtn = e.target;
@@ -242,7 +245,7 @@ function selectAnswer(e) {
     scoreDisplay.innerHTML = `${score}`;
   } else {
     selectedBtn.classList.add("incorrect");
-    //alert("WRONG");
+   
   }
   Array.from(answerButtons.children).forEach((button) => {
     if (button.dataset.correct === "true") {
@@ -260,6 +263,7 @@ function resetState() {
   }
 }
 
+//functions to show score once 10 questions have been answered and show a different message depending on the score. 
 function showScore() {
     resetState();
     if (score <= 3){
@@ -296,7 +300,7 @@ nextButton.addEventListener("click", () => {
 
 startQuiz();
 
-// JavaScript Program to shuffle a given array 
+// JavaScript Program to shuffle the questions in question array , referenced in readme
  
 // A function to print an array 
 function printArray (questions)
