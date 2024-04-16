@@ -95,6 +95,105 @@ const questions = [
       { text: "Francis Ngannou", correct: false },
     ],
   },
+
+  {
+    question: "Who was the first fighter to appear on a box of Wheaties Cereal?",
+    answers: [
+      { text: "Brock Lesnar", correct: false },
+      { text: "Max Holloway", correct: false },
+      { text: "Anthony Pettis", correct: true },
+      { text: "Francis Ngannou", correct: false },
+    ],
+  },
+
+  {
+    question: "Who has the most fight of the night awards in UFC history?",
+    answers: [
+      { text: "Donald Cerrone", correct: false },
+      { text: "Justin Gaethje", correct: false },
+      { text: "Nate Diaz", correct: true },
+      { text: "Nick Diaz", correct: false },
+    ],
+  },
+
+  {
+    question: "Who is the only fighter to have won Fight of the year more than once?",
+    answers: [
+      { text: "Robbie Lawlor", correct: true },
+      { text: "Dustin Poirier", correct: false },
+      { text: "Weili Zhang", correct: false },
+      { text: "Alex Pereira", correct: false },
+    ],
+  },
+
+  {
+    question: "What age was Jon Jones when he first became UFC champion?",
+    answers: [
+      { text: "22", correct: false },
+      { text: "21", correct: false },
+      { text: "23", correct: true },
+      { text: "20", correct: false },
+    ],
+  },
+  {
+    question: "Which was the last state to legalize MMA in the USA?",
+    answers: [
+      { text: "Alaska", correct: false },
+      { text: "California", correct: false },
+      { text: "New York", correct: true },
+      { text: "Washington", correct: false },
+    ],
+  },
+
+  {
+    question: "What year did Conor McGregor first fight in the UFC?",
+    answers: [
+      { text: "2012", correct: false },
+      { text: "2013", correct: true },
+      { text: "2011", correct: false },
+      { text: "2014", correct: false },
+    ],
+  },
+
+  {
+    question: "Who was the first women to win a UFC title by way of KO?",
+    answers: [
+      { text: "Ronda Rousey", correct: false },
+      { text: "Weili Zhang", correct: false },
+      { text: "Jessica Andrade", correct: false },
+      { text: "Holly Holm", correct: true },
+    ],
+  },
+
+  {
+    question: "Who is the president of the UFC?",
+    answers: [
+      { text: "Joe Rogan", correct: false },
+      { text: "Jon Anik", correct: false },
+      { text: "Dana White", correct: true },
+      { text: "Ariel Helwani", correct: false },
+    ],
+  },
+
+  {
+    question: "How many weight classes are in the UFC in total?",
+    answers: [
+      { text: "10", correct: false },
+      { text: "11", correct: false },
+      { text: "12", correct: true },
+      { text: "13", correct: false },
+    ],
+  },
+
+  {
+    question: "Which fighter holds the nickname 'Rush'?",
+    answers: [
+      { text: "Ronda Rousey", correct: false },
+      { text: "Jose Aldo", correct: false },
+      { text: "Georges St Pierre", correct: true },
+      { text: "Randy Costa", correct: false },
+    ],
+  },
 ];
 
 const questionElement = document.getElementById("question");
