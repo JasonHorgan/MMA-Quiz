@@ -201,7 +201,6 @@ const questions = [
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
-let randomQuestion = questions[Math.floor(Math.random())];
 let scoreDisplay = document.getElementById("score_display");
 let currentQuestionIndex = 0;
 let score = 0;
@@ -221,7 +220,6 @@ function startQuiz() {
 function showQuestion() {
   resetState();
   let currentQuestion = questions[currentQuestionIndex];
-  let questionNo = currentQuestionIndex + 1;
   questionElement.innerHTML = currentQuestion.question;
 
   currentQuestion.answers.forEach((answer) => {
@@ -335,7 +333,7 @@ function randomize (questions)
  
         // Swap arr[i] with the element 
         // at random index 
-        
+
         [questions[i], questions[j]] = [questions[j], questions[i]];
     } 
 } 
