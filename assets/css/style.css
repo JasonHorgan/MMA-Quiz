@@ -224,10 +224,6 @@ h3{
   }
 
   
-  .rules  {
-    width: 300px;
-    
-  }
 
 }
 
@@ -255,7 +251,8 @@ h3{
 }
 
   .rules{
-    width: 90%;
+    margin-left: 200px;
+    margin-right:200px;
 
   }
 
