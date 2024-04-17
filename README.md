@@ -83,4 +83,5 @@ The site has been tested on a range of devices and is responsive on all size dev
 The code has been ran through W3C CSS and HTML validator and JShint and has passed with no errors. Screenshots below.
 
 <img src= "/assets/images/js_hint.png">
-<img src= "/assets/images/cssValid.png" >
+<img src= "/assets/images/cssValid.png">
+<img src= "/assets/images/htmlCheck.png">
