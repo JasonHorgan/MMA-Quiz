@@ -76,6 +76,23 @@ When the user selects an answer, the selected answer will turn gold if they got 
 
 <img src="/assets/images/score.png">
 
+## Deployment & Local Development
+
+### Deployment
+
+Github Pages was used to deploy the live website. The instructions to achieve this are below:
+
+- Go to the Settings tab of your GitHub repo.
+- On the left-hand sidebar, in the Code and automation section, select Pages.
+- Make sure:
+    Source is set to 'Deploy from Branch'.
+    Main branch is selected.
+    Folder is set to / (root).
+- Under Branch, click Save.
+- Go back to the Code tab. Wait a few minutes for the build to finish and refresh your repo.
+- On the right-hand side, in the Environments section, click on 'github-pages'.
+- Click View deployment to see the live site. The URL will look similar to YOUR-USERNAME.github.io/project-name.
+
 ## Testing
 
 The site has been tested on a range of devices and is responsive on all size devices including phone, tablet and desktopn and other sizes using chrome developer tools .
@@ -85,3 +102,31 @@ The code has been ran through W3C CSS and HTML validator and JShint and has pass
 <img src= "/assets/images/js_hint.png">
 <img src= "/assets/images/cssValid.png">
 <img src= "/assets/images/htmlCheck.png">
+
+The site and all of its pages have been tested on lighthouse and all passed.
+<img src ="/assets/images/quiz_lh_desk">
+<img src ="/assets/images/quiz_lh_mob">
+
+### Bugs
+
+I discovered a bug where the showScore function was not dispaying the correct alerts with the messages based on the score, which turned out to be beacuse I was missing a semicolan. My startQuiz function was not resetting the score to 0 either but I fixed this after speaking with mentoring services.
+
+### Code Credits
+
+I referenced multiple different resources as outlined below:
+
+- Code Institute's "Love Running" walkthrough for Header, Nav bar, Footer, favicon and media query set ups. 
+- Code Institute's "Love Maths" walkthrough for inspiration on page structure.
+- This youtube video to help guide me through the structure of the page and writing the basic functions which I then expanded on and referenced with comments throughout my code https://www.youtube.com/watch?v=PBcqGxrr9g8
+- This youtube video to help guide me through the structure of the page and give me ideas on how to structure my functions - https://www.youtube.com/watch?v=xZXW5SnCiWI&t=2619s
+- W3 schools to help me understand a lot of fundamentals  
+- This article shared with me by my mentor Graham explaining the Fisher Yates shuffle algorithm which randomised the order of the questions in my quiz - https://www.geeksforgeeks.org/shuffle-a-given-array-using-fisher-yates-shuffle-algorithm/
+- Examples on how to write a readme, shared with me by my mentor Graeme, - https://github.com/kera-cudmore/readme-examples/blob/main/README.md and https://github.com/kera-cudmore/Bully-Book-Club/blob/main/README.md  
+- Stack overflow forums for helping me when I was stuck on specific problems - https://stackoverflow.com/
+- This YouTube video to help me understand how to style the YouTube videos on the video page - https://www.youtube.com/watch?v=jSVy-6kQDxY 
+
+### Acknowledgments
+
+My mentor Graeme for supporting me through the entire process and ensuring I was equipped with the right tools to overcome any issues during the project. 
+The Code Institute slack community for being engaging and helpful when needed. 
+Tutoring service for being on hand and keeping me on the right track when needed. 
