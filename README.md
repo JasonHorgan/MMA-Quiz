@@ -76,6 +76,10 @@ When the user selects an answer, the selected answer will turn gold if they got 
 
 <img src="/assets/images/score.png">
 
+### Future implementation
+
+In the future I would like to implement a scoreboard, a modal where the rules pop up when a button is clicked so I can remove the header as I feel the header takes away from the overall feel of the webpage. 
+
 ## Deployment & Local Development
 
 ### Deployment
@@ -104,8 +108,10 @@ The code has been ran through W3C CSS and HTML validator and JShint and has pass
 <img src= "/assets/images/htmlCheck.png">
 
 The site and all of its pages have been tested on lighthouse and all passed.
-<img src ="/assets/images/quiz_lh_desk">
-<img src ="/assets/images/quiz_lh_mob">
+
+<img src="/assets/images/how_lh_desk.png">
+<img src="assets/images/how_lh_mob.png">
+<img src="assets/images/quiz_lh_desk.png">
 
 ### Bugs
 
