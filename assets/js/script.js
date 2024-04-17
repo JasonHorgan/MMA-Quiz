@@ -1,7 +1,7 @@
 
 
 /** QUESTIONS AND ANSWERS DATA*/
-
+// basic structure taken from GreatStack tutorial as mentioned in readme and expanded upon by adding additional code by myself
 const questions = [
   {
     question: "What year was the UFC founded?",
@@ -205,7 +205,7 @@ let scoreDisplay = document.getElementById("score_display");
 let currentQuestionIndex = 0;
 let score = 0;
 
-// Function to start quiz. Some code adapted from tutorial mentioned in readme
+// Function to start quiz. Some code adapted from greatStack tutorial mentioned in readme
 
 function startQuiz() {
   randomize(questions);
@@ -215,7 +215,7 @@ function startQuiz() {
   scoreDisplay.innerHTML = `${score}`;
   showQuestion();
 }
-// Function to map question data to question div. Some code adapted from tutorial mentioned in readme
+// Function to map question data to question div. Some code adapted from greatStack tutorial mentioned in readme
 
 function showQuestion() {
   resetState();
@@ -300,7 +300,7 @@ nextButton.addEventListener("click", () => {
 
 startQuiz();
 
-// JavaScript Program to shuffle the questions in question array , referenced in readme
+// JavaScript Program to shuffle the questions in question array , referenced in fisher yates algorithym in readme
  
 function randomize (questions) 
 {
