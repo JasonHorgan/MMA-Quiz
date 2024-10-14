@@ -1,5 +1,3 @@
-
-
 /** QUESTIONS AND ANSWERS DATA*/
 // basic structure taken from GreatStack tutorial as mentioned in readme and expanded upon by adding additional code by myself
 const questions = [
@@ -97,7 +95,8 @@ const questions = [
   },
 
   {
-    question: "Who was the first fighter to appear on a box of Wheaties Cereal?",
+    question:
+      "Who was the first fighter to appear on a box of Wheaties Cereal?",
     answers: [
       { text: "Brock Lesnar", correct: false },
       { text: "Max Holloway", correct: false },
@@ -117,7 +116,8 @@ const questions = [
   },
 
   {
-    question: "Who is the only fighter to have won Fight of the year more than once?",
+    question:
+      "Who is the only fighter to have won Fight of the year more than once?",
     answers: [
       { text: "Robbie Lawlor", correct: true },
       { text: "Dustin Poirier", correct: false },
@@ -197,7 +197,6 @@ const questions = [
 ];
 
 // Variable data
-
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
@@ -206,17 +205,23 @@ let currentQuestionIndex = 0;
 let score = 0;
 
 // Function to start quiz. Some code adapted from greatStack tutorial mentioned in readme
-
 function startQuiz() {
   randomize(questions);
   currentQuestionIndex = 0;
   score = 0;
+  nextButton.addEventListener("click", () => {
+    if (currentQuestionIndex < 10) {
+      handleNextButton();
+    } else {
+      startQuiz();
+    }
+  });
   nextButton.innerHTML = "Next Question";
   scoreDisplay.innerHTML = `${score}`;
   showQuestion();
 }
-// Function to map question data to question div. Some code adapted from greatStack tutorial mentioned in readme
 
+// Function to map question data to question div. Some code adapted from greatStack tutorial mentioned in readme
 function showQuestion() {
   resetState();
   let currentQuestion = questions[currentQuestionIndex];
@@ -233,8 +238,8 @@ function showQuestion() {
     button.addEventListener("click", selectAnswer);
   });
 }
-// Function to select answer and mark data as correct or incorrect. Some code adapted from tutorial mentioned in readme
 
+// Function to select answer and mark data as correct or incorrect. Some code adapted from tutorial mentioned in readme
 function selectAnswer(e) {
   const selectedBtn = e.target;
   const isCorrect = selectedBtn.dataset.correct === "true";
@@ -244,7 +249,6 @@ function selectAnswer(e) {
     scoreDisplay.innerHTML = `${score}`;
   } else {
     selectedBtn.classList.add("incorrect");
-   
   }
   Array.from(answerButtons.children).forEach((button) => {
     if (button.dataset.correct === "true") {
@@ -262,22 +266,19 @@ function resetState() {
   }
 }
 
-//functions to show score once 10 questions have been answered and show a different message depending on the score. 
-
+//functions to show score once 10 questions have been answered and show a different message depending on the score.
 function showScore() {
-    resetState();
-    if (score <= 3){
+  resetState();
+  if (score <= 3) {
     questionElement.innerHTML = `You scored ${score} out of 10! You're a casual!`;
-    }
-    else if (score >3 && score <7){
-        questionElement.innerHTML = `You scored ${score} out of 10! You're a contender`; 
-    }
-    else if(score > 7){
-        questionElement.innerHTML = `You scored ${score} out of 10! That's a championship level score!`;
-    }
-    nextButton.innerHTML = "Play Again";
-    nextButton.style.display = "block";
+  } else if (score > 3 && score < 7) {
+    questionElement.innerHTML = `You scored ${score} out of 10! You're a contender`;
+  } else if (score > 7) {
+    questionElement.innerHTML = `You scored ${score} out of 10! That's a championship level score!`;
   }
+  nextButton.innerHTML = "Play Again";
+  nextButton.style.display = "block";
+}
 
 function handleNextButton() {
   currentQuestionIndex++;
@@ -288,38 +289,21 @@ function handleNextButton() {
   }
 }
 
-scoreDisplay.innerHTML = score;
-
-nextButton.addEventListener("click", () => {
-  if (currentQuestionIndex < 10) {
-    handleNextButton();
-  } else {
-    startQuiz();
-  }
-});
-
-startQuiz();
+if (window.location.pathname.includes("index.html")) {
+  startQuiz();
+}
 
 // JavaScript Program to shuffle the questions in question array , referenced in fisher yates algorithym in readme
- 
-function randomize (questions) 
-{
- 
-    // Start from the last element and swap 
-    // one by one. We don't need to run for 
-    // the first element that's why i > 0 
+function randomize(questions) {
+  // Start from the last element and swap
+  // one by one. We don't need to run for
+  // the first element that's why i > 0
 
-    for (let i = questions.length - 1; i > 0; i--)
-    {
-     
-        // Pick a random index from 0 to i inclusive
+  for (let i = questions.length - 1; i > 0; i--) {
+    // Pick a random index from 0 to i inclusive
+    let j = Math.floor(Math.random() * (i + 1));
 
-        let j = Math.floor(Math.random() * (i + 1)); 
- 
-        // Swap arr[i] with the element 
-        // at random index 
-
-        [questions[i], questions[j]] = [questions[j], questions[i]];
-    } 
-} 
- 
+    // Swap arr[i] with the element at random index
+    [questions[i], questions[j]] = [questions[j], questions[i]];
+  }
+}

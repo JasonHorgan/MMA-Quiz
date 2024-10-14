@@ -1,155 +1,153 @@
 body {
-    background-color: red;
+  background-color: red;
 }
 
 /* Asterisk wildcard selector to override default styles added by web browser */
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  /* General Style rules - some code referenced from love running tutorial  */
-  
-  body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    font-family: "Raleway", sans-serif;
-  }
-  
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* General Style rules - some code referenced from love running tutorial  */
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Raleway", sans-serif;
+}
 
 /* Header - some code referenced from love running tutorial  */
 
 header {
-    background-color: black;
-    color: whitesmoke;
-    padding: 0 1rem;
-    position: fixed;
-    z-index: 99;
-    width: 100%;
-    box-shadow: 0 1px 1px white;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-  }
-  
-  header a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  #menu {
-    font-size: 110%;
-    letter-spacing: 4px;
-    list-style-type: none;
-    color: goldenrod;
-  }
-  
-  #menu > li {
-    margin-bottom: 1em;
-  }
-  
-  .active {
-    border-bottom: 1px solid white;
-  }
-  
-  /* Nav bar styles with drop down toggle - some code referenced from love running tutorial  */
-  
-  nav {
-    position: absolute;
-    background-color: black;
-    width: 100%;
-    left: 0;
-    padding: 0 1rem;
-    box-shadow: 0 2px 2px goldenrod;
-    display: none;
-    top: 100%;
-  }
-  
-  /* Nav Toggle - some code referenced from love running tutorial  */
-  #nav-toggle:checked ~ nav {
-    display: block;
-  }
-  
-  #nav-toggle {
-    display: none;
-  }
-  
-  .nav-toggle-label {
-    font-size: 2rem;
-  }
+  background-color: black;
+  color: whitesmoke;
+  padding: 0 1rem;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  box-shadow: 0 1px 1px white;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
 
-  /* Main Content - some code referenced from love running tutorial  */
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#menu {
+  font-size: 110%;
+  letter-spacing: 4px;
+  list-style-type: none;
+  color: goldenrod;
+}
+
+#menu > li {
+  margin-bottom: 1em;
+}
+
+.active {
+  border-bottom: 1px solid white;
+}
+
+/* Nav bar styles with drop down toggle - some code referenced from love running tutorial  */
+
+nav {
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  left: 0;
+  padding: 0 1rem;
+  box-shadow: 0 2px 2px goldenrod;
+  display: none;
+  top: 100%;
+}
+
+/* Nav Toggle - some code referenced from love running tutorial  */
+#nav-toggle:checked ~ nav {
+  display: block;
+}
+
+#nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  font-size: 2rem;
+}
+
+/* Main Content - some code referenced from love running tutorial  */
 
 main {
-    background-color: red;
-    /* Make main element take up any surplus space to push footer down */
-    flex: 1 0 auto;
-    margin-top: 47px;
-  }
-
-  #ufc_logo{
-    width:250px; 
-  }
-
-  .ufc_image{
-    display: flex;
-    justify-content: center;
-  }
-
-.app{
-    background: white;
-    width: 90%;
-    max-width: 600px;
-    margin: 50px auto 30px;
-    border-radius: 10px;
-    padding: 30px;
+  background-color: red;
+  /* Make main element take up any surplus space to push footer down */
+  flex: 1 0 auto;
+  margin-top: 47px;
 }
-.app h1{
+
+#ufc_logo {
+  width: 250px;
+}
+
+.ufc_image {
+  display: flex;
+  justify-content: center;
+}
+
+.app {
+  background: white;
+  width: 90%;
+  max-width: 600px;
+  margin: 50px auto 30px;
+  border-radius: 10px;
+  padding: 30px;
+}
+.app h1 {
   font-family: "poppins";
-    font-size: 25px;
-    color: black;
-    font-weight: 600;
-    text-align: center;
+  font-size: 25px;
+  color: black;
+  font-weight: 600;
+  text-align: center;
 }
 
-.quiz{
-    padding: 20px 0;
+.quiz {
+  padding: 20px 0;
 }
-.quiz h2{
+.quiz h2 {
   font-family: "encode sans";
-    font-size: 19px;
-    color: black;
-    font-weight: 600;
-    text-align: center;
+  font-size: 19px;
+  color: black;
+  font-weight: 600;
+  text-align: center;
 }
-.btn{
-    background: #fff;
-    color: #222;
-    font-family: "poppins";
-    font-weight: 500;
-    width: 100%;
-    border: 1px solid goldenrod;
-    padding: 10px;
-    margin: 10px 0;
-    text-align: center;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.answer-btn:hover:not([disabled]){
-    background: #222;
-    color: #fff;
-
-}
-.answer-btn:disabled{
-    cursor:no-drop;
+.btn {
+  background: #fff;
+  color: #222;
+  font-family: "poppins";
+  font-weight: 500;
+  width: 100%;
+  border: 1px solid goldenrod;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
-#next-btn{
+.answer-btn:hover:not([disabled]) {
+  background: #222;
+  color: #fff;
+}
+.answer-btn:disabled {
+  cursor: no-drop;
+}
+
+#next-btn {
   background: black;
   color: goldenrod;
   font-weight: 500;
@@ -158,17 +156,16 @@ main {
   padding: 10px;
   margin: 10px 0;
   text-align: center;
-
 }
 
-.correct{
+.correct {
   background: goldenrod;
 }
-.incorrect{
+.incorrect {
   background: red;
 }
 
-#how{
+#how {
   background: white;
   width: 90%;
   max-width: 600px;
@@ -177,7 +174,7 @@ main {
   padding: 30px;
 }
 
-h3{
+h3 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -198,65 +195,54 @@ h3{
   background-color: goldenrod;
   border-color: black;
 }
-  /* Footer - some code referenced from love running tutorial  */
+/* Footer - some code referenced from love running tutorial  */
 
 #social-networks {
-    background-color: black;
-    text-align: center;
-    padding: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-  }
-  
-  #social-networks i {
-    font-size: 160%;
-    padding: 5%;
-    color: goldenrod;
-  }
+  background-color: black;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
 
-  /* Media query tablets and larger (768px and up) - some code referenced from love running tutorial  */
+#social-networks i {
+  font-size: 160%;
+  padding: 5%;
+  color: goldenrod;
+}
+
+/* Media query tablets and larger (768px and up) - some code referenced from love running tutorial  */
 
 @media screen and (min-width: 768px) {
-
-  #ufc_logo{
-    width:400px; 
+  #ufc_logo {
+    width: 400px;
   }
-
-  
-
 }
 
 /* Large devices (laptops and desktops 992px and up) - some code referenced from love running tutorial  */
 
-@media screen and (min-width: 992px){
-
-  .app{
-
+@media screen and (min-width: 992px) {
+  .app {
     height: 600px;
-}
+  }
 
-.quiz{
-  padding-top: 100px;
-  align-content: center;
-}
+  .quiz {
+    padding-top: 100px;
+    align-content: center;
+  }
 
-.quiz > h2{
-  font-size: 30px;
-  padding-bottom: 10px;
-}
+  .quiz > h2 {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
 
-#ufc_logo{
-  width:600px;
-}
+  #ufc_logo {
+    width: 600px;
+  }
 
-  .rules{
+  .rules {
     margin-left: 200px;
-    margin-right:200px;
-
+    margin-right: 200px;
   }
-
-  }
-
-
-
+}
