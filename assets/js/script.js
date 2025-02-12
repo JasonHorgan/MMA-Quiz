@@ -289,7 +289,7 @@ function handleNextButton() {
   }
 }
 
-if (window.location.pathname.includes("index.html")) {
+if (window.location.pathname.includes("MMA-Quiz") || window.location.pathname.endsWith("index.html")) {
   startQuiz();
 }
 
