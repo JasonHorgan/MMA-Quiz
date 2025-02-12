@@ -194,7 +194,179 @@ const questions = [
       { text: "Randy Costa", correct: false },
     ],
   },
+  {
+    question: "Who was the first UFC fighter to fight in 3 different weight classes?",
+    answers: [
+      { text: "BJ Penn", correct: true },
+      { text: "Conor McGregor", correct: false },
+      { text: "Frankie Edgar", correct: false },
+      { text: "Daniel Cormier", correct: false },
+    ],
+  },
+  {
+    question: "Which UFC fighter has the longest unbeaten streak in UFC history?",
+    answers: [
+      { text: "Khabib Nurmagomedov", correct: true },
+      { text: "Anderson Silva", correct: false },
+      { text: "Jon Jones", correct: false },
+      { text: "Georges St-Pierre", correct: false },
+    ],
+  },
+  {
+    question: "Who won the first UFC Women's Bantamweight title?",
+    answers: [
+      { text: "Ronda Rousey", correct: true },
+      { text: "Holly Holm", correct: false },
+      { text: "Miesha Tate", correct: false },
+      { text: "Amanda Nunes", correct: false },
+    ],
+  },
+  {
+    question: "Who holds the record for most UFC title defenses in the men's division?",
+    answers: [
+      { text: "Demetrious Johnson", correct: true },
+      { text: "Jon Jones", correct: false },
+      { text: "Georges St-Pierre", correct: false },
+      { text: "Anderson Silva", correct: false },
+    ],
+  },
+  {
+    question: "Who was the first fighter to win the UFC Flyweight title?",
+    answers: [
+      { text: "Demetrious Johnson", correct: true },
+      { text: "Henry Cejudo", correct: false },
+      { text: "Joseph Benavidez", correct: false },
+      { text: "Rodtang", correct: false },
+    ],
+  },
+  {
+    question: "Which fighter holds the most finishes in UFC history?",
+    answers: [
+      { text: "Charles Oliveira", correct: true },
+      { text: "Donald Cerrone", correct: false },
+      { text: "Frankie Edgar", correct: false },
+      { text: "Nate Diaz", correct: false },
+    ],
+  },
+  {
+    question: "Which UFC fighter is known as 'The Immortal'?",
+    answers: [
+      { text: "Matt Brown", correct: true },
+      { text: "Nick Diaz", correct: false },
+      { text: "Conor McGregor", correct: false },
+      { text: "Robbie Lawler", correct: false },
+    ],
+  },
+  {
+    question: "Who holds the most consecutive UFC title defenses in the welterweight division?",
+    answers: [
+      { text: "Georges St-Pierre", correct: true },
+      { text: "Matt Hughes", correct: false },
+      { text: "Tyron Woodley", correct: false },
+      { text: "Kamaru Usman", correct: false },
+    ],
+  },
+  {
+    question: "Who was the first UFC fighter to win the 'Fighter of the Year' award twice?",
+    answers: [
+      { text: "Conor McGregor", correct: true },
+      { text: "Jon Jones", correct: false },
+      { text: "Daniel Cormier", correct: false },
+      { text: "Khabib Nurmagomedov", correct: false },
+    ],
+  },
+  {
+    question: "Which UFC event was the first to feature a live audience after the COVID-19 pandemic?",
+    answers: [
+      { text: "UFC 249", correct: true },
+      { text: "UFC 261", correct: false },
+      { text: "UFC 265", correct: false },
+      { text: "UFC 253", correct: false },
+    ],
+  },
+  {
+    question: "What is the UFC's most popular PPV event of all time?",
+    answers: [
+      { text: "UFC 229", correct: true },
+      { text: "UFC 100", correct: false },
+      { text: "UFC 205", correct: false },
+      { text: "UFC 202", correct: false },
+    ],
+  },
+  {
+    question: "Who has the most submission wins in UFC history?",
+    answers: [
+      { text: "Charles Oliveira", correct: true },
+      { text: "Frankie Edgar", correct: false },
+      { text: "BJ Penn", correct: false },
+      { text: "Nate Diaz", correct: false },
+    ],
+  },
+  {
+    question: "Who is the youngest fighter in UFC history to win a title?",
+    answers: [
+      { text: "Jon Jones", correct: true },
+      { text: "Ronda Rousey", correct: false },
+      { text: "Conor McGregor", correct: false },
+      { text: "Stipe Miocic", correct: false },
+    ],
+  },
+  {
+    question: "Which UFC fighter is known for his 'chael sunnen' trash-talking style?",
+    answers: [
+      { text: "Chael Sonnen", correct: true },
+      { text: "Conor McGregor", correct: false },
+      { text: "Michael Bisping", correct: false },
+      { text: "Nate Diaz", correct: false },
+    ],
+  },
+  {
+    question: "Who was the first UFC fighter to win the 'Fight of the Night' bonus twice?",
+    answers: [
+      { text: "Joe Lauzon", correct: true },
+      { text: "Nate Diaz", correct: false },
+      { text: "Donald Cerrone", correct: false },
+      { text: "Robbie Lawler", correct: false },
+    ],
+  },
+  {
+    question: "Which UFC fighter was nicknamed 'The Brazilian Pitbull'?",
+    answers: [
+      { text: "Antonio Rodrigo Nogueira", correct: true },
+      { text: "Anderson Silva", correct: false },
+      { text: "Vitor Belfort", correct: false },
+      { text: "Thiago Alves", correct: false },
+    ],
+  },
+  {
+    question: "Which UFC event featured the first ever women's fight?",
+    answers: [
+      { text: "UFC 157", correct: true },
+      { text: "UFC 134", correct: false },
+      { text: "UFC 113", correct: false },
+      { text: "UFC 178", correct: false },
+    ],
+  },
+  {
+    question: "Who was the first fighter to knock out Anderson Silva?",
+    answers: [
+      { text: "Chris Weidman", correct: true },
+      { text: "Chael Sonnen", correct: false },
+      { text: "Daniel Cormier", correct: false },
+      { text: "Vitor Belfort", correct: false },
+    ],
+  },
+  {
+    question: "Who has the most UFC wins in history?",
+    answers: [
+      { text: "Donald Cerrone", correct: true },
+      { text: "Georges St-Pierre", correct: false },
+      { text: "Frankie Edgar", correct: false },
+      { text: "Anderson Silva", correct: false },
+    ],
+  },
 ];
+
 // Variable data
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
