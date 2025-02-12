@@ -195,7 +195,6 @@ const questions = [
     ],
   },
 ];
-
 // Variable data
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
@@ -209,16 +208,13 @@ function startQuiz() {
   randomize(questions);
   currentQuestionIndex = 0;
   score = 0;
-  nextButton.addEventListener("click", () => {
-    if (currentQuestionIndex < 10) {
-      handleNextButton();
-    } else {
-      startQuiz();
-    }
-  });
   nextButton.innerHTML = "Next Question";
   scoreDisplay.innerHTML = `${score}`;
   showQuestion();
+
+  // Set up next button event listener only once
+  nextButton.removeEventListener("click", playAgainHandler);
+  nextButton.addEventListener("click", handleNextButton);
 }
 
 // Function to map question data to question div. Some code adapted from greatStack tutorial mentioned in readme
@@ -259,6 +255,7 @@ function selectAnswer(e) {
   nextButton.style.display = "block";
 }
 
+// Reset the state of the quiz (clear answers and hide next button)
 function resetState() {
   nextButton.style.display = "none";
   while (answerButtons.firstChild) {
@@ -276,10 +273,20 @@ function showScore() {
   } else if (score > 7) {
     questionElement.innerHTML = `You scored ${score} out of 10! That's a championship level score!`;
   }
+
   nextButton.innerHTML = "Play Again";
   nextButton.style.display = "block";
+
+  // Attach the playAgainHandler to reset quiz when "Play Again" is clicked
+  nextButton.addEventListener("click", playAgainHandler);
 }
 
+// Function to handle the "Play Again" button
+function playAgainHandler() {
+  startQuiz(); // Restart the quiz by calling startQuiz
+}
+
+// Function to handle next question button click
 function handleNextButton() {
   currentQuestionIndex++;
   if (currentQuestionIndex < 10) {
@@ -289,7 +296,10 @@ function handleNextButton() {
   }
 }
 
-if (window.location.pathname.includes("MMA-Quiz") || window.location.pathname.endsWith("index.html")) {
+if (
+  window.location.pathname.includes("MMA-Quiz") ||
+  window.location.pathname.endsWith("index.html")
+) {
   startQuiz();
 }
 
